@@ -26,28 +26,28 @@ const object1 = {
   gender: "F"
 }
 
-const object1 = {
+const object2 = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M"
 }
 
-const object1 = {
+const object3 = {
   id: 3,
   name: "Keven",
   email: "kmummery2@wikimedia.org",
   gender: "M"
 }
 
-const object1 = {
+const object4 = {
   id: 4,
   name: "Gannie",
   email: "gmartinson3@illinois.edu",
   gender: "M"
 }
 
-const object1 = {
+const object5 = {
   id: 5,
   name: "Antonietta",
   email: "adaine5@samsung.com",
