@@ -96,8 +96,12 @@ console.log(carYears)
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = [];
-console.log();
+// let oldCars = [];
+// console.log();
+
+let oldCars = [{"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983}, {"id":5,"car_make":"Mitsubishi","car_model":"Galant","car_year":1990}, {"id":6,"car_make":"Honda","car_model":"Accord","car_year":1995}, {"id":8,"car_make":"Audi","car_model":"4000CS Quattro","car_year":1987}, {"id":9,"car_make":"Ford","car_model":"Windstar","car_year":1996}, {"id":13,"car_make":"Chevrolet","car_model":"Cavalier","car_year":1997}, {"id":14,"car_make":"Dodge","car_model":"Ram Van 1500","car_year":1999}, {"id":17,"car_make":"Buick","car_model":"Skylark","car_year":1987}, {"id":18,"car_make":"Geo","car_model":"Prizm","car_year":1995}, {"id":19,"car_make":"Oldsmobile","car_model":"Bravada","car_year":1994}, {"id":20,"car_make":"Mazda","car_model":"Familia","car_year":1985}, {"id":22,"car_make":"Jeep","car_model":"Wrangler","car_year":1997}, {"id":23,"car_make":"Eagle","car_model":"Talon","car_year":1992}, {"id":29,"car_make":"Mercury","car_model":"Topaz","car_year":1993}, {"id":31,"car_make":"Pontiac","car_model":"GTO","car_year":1964}, {"id":32,"car_make":"Dodge","car_model":"Ram Van 3500","car_year":1999}, {"id":34,"car_make":"Ford","car_model":"Escort","car_year":1991}, {"id":37,"car_make":"Oldsmobile","car_model":"LSS","car_year":1997}, {"id":38,"car_make":"Toyota","car_model":"Camry","car_year":1992}, {"id":39,"car_make":"Ford","car_model":"Econoline E250","car_year":1998}, {"id":41,"car_make":"Ford","car_model":"Mustang","car_year":1965}, {"id":42,"car_make":"GMC","car_model":"Yukon","car_year":1996}, {"id":46,"car_make":"Oldsmobile","car_model":"Ciera","car_year":1995}, {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996}, {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}]
+
+console.log(oldCars.length)
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
