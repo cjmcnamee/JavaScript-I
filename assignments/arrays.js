@@ -105,5 +105,9 @@ console.log(oldCars.length)
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi = [];
-console.log();
+// let BMWAndAudi = [];
+// console.log();
+
+let BMWAndAudi = [{"id":8,"car_make":"Audi","car_model":"4000CS Quattro","car_year":1987}, {"id":25,"car_make":"BMW","car_model":"525","car_year":2005}, {"id":30,"car_make":"BMW","car_model":"6 Series","car_year":2010}, {"id":44,"car_make":"Audi","car_model":"Q7","car_year":2012}, {"id":45,"car_make":"Audi","car_model":"TT","car_year":2008}];
+
+console.log(JSON.stringify(BMWAndAudi));
