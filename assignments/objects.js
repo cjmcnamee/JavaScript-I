@@ -30,7 +30,7 @@ const object2 = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
-  gender: "M"
+  gender: "M",
 }
 
 const object3 = {
@@ -68,13 +68,37 @@ const object5 = {
   console.log(object4.name)
 // Antonietta's Gender
   console.log(object5.gender)
-  
+
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+  const object2 = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M",
+  speak: function(){
+    console.log(`Hello, my name is ${this.name}`);
+    }
+  }
+
+  object2.speak();
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+  const object5 = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F",
+  multiplyNums: function(num1, num2){
+    console.log(num1 * num2);
+  }
+  }
+
+  object5.multiplyNums(3,4);
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
