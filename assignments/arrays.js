@@ -67,14 +67,19 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}` );
 
+for(let i = 0; i < inventory.length; i++) {
+  console.log(inventory[i]);
+}
+
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 // let lastCar = 0;
 // console.log();
 
-let lastCar = inventory[49];
-console.log(lastCar.car_make);
-console.log(lastCar.car_mode);
+let lastCar = 0;
+lastCar = inventory.length - 1;
+console.log(inventory[lastCar].car_make);
+console.log(inventory[lastCar].car_model);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -83,7 +88,11 @@ console.log(lastCar.car_mode);
 
 let carModels = [];
 
-carModels.push(inventory.car_model);
+for(let i = 0; i < inventory.length; i++) {
+    carModels.push(inventory[i].car_model);
+};
+
+carModels.sort();
 
 console.log(carModels);
 
@@ -92,7 +101,11 @@ console.log(carModels);
 // let carYears = [];
 // console.log();
 
-let carYears = inventory.map(a => a.car_year);
+let carYears = [];
+
+for(let i = 0; i < inventory.length; i++) {
+    carYears.push(inventory[i].car_year);
+};
 
 console.log(carYears);
 
@@ -101,9 +114,15 @@ console.log(carYears);
 // let oldCars = [];
 // console.log();
 
-let oldCars = carYears.filter(a => a < 2000);
+let oldCars = [];
 
-console.log(oldCars.length);
+for(let i = 0; i < carYears.length; i++) {
+    if(carYears[i] < 2000){
+      oldCars.push(carYears[i]);
+    }
+}
+
+console.log(oldCars);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
