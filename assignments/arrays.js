@@ -81,7 +81,9 @@ console.log(lastCar.car_mode);
 // let carModels = [];
 // console.log();
 
-let carModels = ["300M", "4000CS Quattro", "525", "6 Series", "Accord", "Aerio", "Audi", "Bravada", "Camry", "Cavalier", "Ciera", "Chrysler", "Defender Ice Edition", "Dodge", "E-Class", "Escalade", "Escort", "Esprit", "Express 1500", "Familia", "Ford", "Fortwo", "G35", "Galant", "GMC", "GTO", "Intrepid", "Lincoln", "Lotus", "LSS", "Mercedes-Benz", "Miata MX-5","Montero Sport", "MR2", "Navigator", "Prizm", "Q", "Ram Van 1500", "Skylark", "Talon", "Topaz", "Volkswagen", "Windstar", "Wrangler", "XC70"];
+let carModels = [];
+
+carModels.push(inventory.car_model);
 
 console.log(carModels);
 
@@ -90,8 +92,8 @@ console.log(carModels);
 // let carYears = [];
 // console.log();
 
-
 let carYears = inventory.map(a => a.car_year);
+
 console.log(carYears);
 
 // ==== Challenge 5 ====
@@ -99,7 +101,7 @@ console.log(carYears);
 // let oldCars = [];
 // console.log();
 
-let oldCars = carYears.filter(a -> a < 2000);
+let oldCars = carYears.filter(a => a < 2000);
 
 console.log(oldCars.length);
 
